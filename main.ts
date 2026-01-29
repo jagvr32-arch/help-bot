@@ -88,9 +88,6 @@ input.onGesture(Gesture.ScreenDown, function () {
         # . . . #
         `)
 })
-input.onButtonPressed(Button.AB, function () {
-    input.calibrateCompass()
-})
 input.onButtonPressed(Button.B, function () {
     music.play(music.stringPlayable("C5 - C5 - C5 - C5 C5 ", 200), music.PlaybackMode.UntilDone)
     music.play(music.stringPlayable("C5 - C5 C5 C5 - C5 C5 ", 200), music.PlaybackMode.UntilDone)
