@@ -88,6 +88,9 @@ input.onGesture(Gesture.ScreenDown, function () {
         # . . . #
         `)
 })
+input.onButtonPressed(Button.AB, function () {
+    input.calibrateCompass()
+})
 input.onButtonPressed(Button.B, function () {
     music.play(music.stringPlayable("C5 - C5 - C5 - C5 C5 ", 200), music.PlaybackMode.UntilDone)
     music.play(music.stringPlayable("C5 - C5 C5 C5 - C5 C5 ", 200), music.PlaybackMode.UntilDone)
@@ -170,7 +173,7 @@ input.onGesture(Gesture.LogoDown, function () {
 let Bearing = 0
 music.setVolume(255)
 led.setBrightness(255)
-basic.showString("Help bot V2 ")
+basic.showString("Help bot V2.1")
 music.play(music.stringPlayable("D C5 E F A E A F ", 156), music.PlaybackMode.InBackground)
 basic.showIcon(IconNames.Diamond)
 basic.showIcon(IconNames.SmallDiamond)
@@ -193,7 +196,7 @@ basic.showLeds(`
 music.play(music.stringPlayable("E F C5 C5 G E F G ", 156), music.PlaybackMode.InBackground)
 basic.showString("loading complete")
 music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
-basic.showString("Hello! please press the A button for the compass or B for sos A + B TO CALIBRATE")
+basic.showString("Hello user!")
 basic.forever(function () {
 	
 })
